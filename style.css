@@ -1,0 +1,109 @@
+#nav {
+    left: 0; top: 0px; right:0; height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+
+}
+
+
+body {
+    width: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+#fixed-content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#fixed-content p {
+    margin-bottom: 20px;
+}
+
+#fixed-content img {
+    width: 20%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 60px;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#wrapper > div {
+    margin-bottom: 20px;
+}
+#content-Aboutme, #content-Hobby, #content-Goal {
+    display: none;
+    padding-bottom: 50px;
+    /*height: 1300px;*/
+}
+
+#wrapper {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#content-Hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#content-Hobby > div {
+    width: auto;
+    margin-bottom: 20px;
+}  
+
+#content-Hobby .hobby-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#content-Hobby .hobby-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+#content-Hobby .hobby-block p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 660px) {
+    #nav {
+        display: inline;
+        width: 100%;
+        padding-right: 0px;
+    }
+    #nav a {
+        font-size: medium;
+    }
+    #wrapper {
+        text-align:left;
+        font-size: small;
+    }
+
+    .hobby-block img {
+      max-width: 100%;
+      height: auto;
+    }
+    #content-Goal {
+        font-size: smaller;
+    }
+    
+    #content-Hobby {
+        font-size: small;
+    }
+}
